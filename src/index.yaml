@@ -1,5 +1,5 @@
 ProjectTitle: app
 
 PageList:
-- file: page.html
+- file: home-event.html
   ready: 50

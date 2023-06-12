@@ -15,8 +15,8 @@ var config = {
         sass         : 'src/sass',
         // path for sass files that will be generated automatically via some of tasks
         sassGen      : 'src/sass/generated',
-        js           : 'src/js',
-        img          : 'src/img',
+        js           : 'src/templates/assets/js',
+        img          : 'src/templates/assets',
         svg          : 'src/img/svg',
         icons        : 'src/icons',
         // path to png sources for sprite:png task
@@ -32,10 +32,10 @@ var config = {
     dest: {
         root : destPath,
         html : destPath,
-        css  : destPath + '/css',
-        js   : destPath + '/js',
-        img  : destPath + '/img',
-        fonts: destPath + '/fonts',
+        css  : destPath + '/assets/css',
+        js   : destPath + '/assets/js',
+        img  : destPath + '/assets',
+        fonts: destPath + '/assets/fonts',
         lib  : destPath + '/lib',
         data : destPath + '/data'
     },

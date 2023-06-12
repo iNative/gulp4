@@ -1,6 +1,8 @@
 // Require all tasks in gulp/tasks, including subfolders
 // require('require-dir')('./gulp/tasks', {recurse: true});
 
+// regex to find unclosed tags ---->.     <meta\b[^>]*[^/]>$
+
 var gulp = require("gulp");
 var config = require("./gulp/config");
 
@@ -17,16 +19,16 @@ gulp.task("nunjucks", getTaskBuild("nunjucks"));
 gulp.task("sass", getTaskBuild("sass"));
 gulp.task("server", getTaskBuild("server"));
 gulp.task("svgo", getTaskBuild("svgo"));
-gulp.task("webpack", getTaskBuild("webpack"));
-gulp.task("list-pages", getTaskBuild("list-pages"));
+//gulp.task("webpack", getTaskBuild("webpack"));
+//gulp.task("list-pages", getTaskBuild("list-pages"));
 gulp.task("sprite:svg", getTaskBuild("sprite-svg"));
 
 gulp.task("copy:watch", getTaskWatch("copy"));
 gulp.task("nunjucks:watch", getTaskWatch("nunjucks"));
 gulp.task("sass:watch", getTaskWatch("sass"));
 gulp.task("svgo:watch", getTaskWatch("svgo"));
-gulp.task("webpack:watch", getTaskWatch("webpack"));
-gulp.task("list-pages:watch", getTaskWatch("list-pages"));
+//gulp.task("webpack:watch", getTaskWatch("webpack"));
+//gulp.task("list-pages:watch", getTaskWatch("list-pages"));
 gulp.task("sprite:svg:watch", getTaskWatch("sprite-svg"));
 
 // high order tasks
@@ -75,7 +77,7 @@ gulp.task(
     "svgo",
     "sass",
     "nunjucks",
-    // 'webpack',
+    //'webpack',
     // "list-pages",
     "copy"
   )

@@ -1,0 +1,59 @@
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+    <section class="bg-dark text-light header-inner p-0 jarallax position-relative" data-jarallax data-speed="0.2" data-overlay>
+      <img src="assets/img/flag.jpg" alt="Image" class="jarallax-img opacity-40"/>
+      <div class="container py-0">
+        <div class="row my-3 ">
+          <div class="col">
+            <nav aria-label="breadcrumb ">
+              <ol class="breadcrumb d-none">
+                <li class="breadcrumb-item ">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Pages</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row my-4 my-md-6" data-aos="fade-up  ">
+          <div class="col-lg-9 col-xl-8 ">
+            <h1 class="display-4">Get In Touch</h1>
+            <p class="lead mb-0 d-none">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <h3 class="h2">Visit</h3>
+            <span class="lead">
+              389 Greenpoint Ave
+              <br />Crown Heights, Brooklyn
+              <br />New York
+            </span>
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <h3 class="h2">Email</h3>
+            <a href="#" class="lead">hello@company.io</a>
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <h3 class="h2">Call</h3>
+            <span class="lead">
+              +61 4728 3928
+            </span>
+            <div class="text-small text-muted">Mon - Fri, 9am - 5pm</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  {% endblock %}

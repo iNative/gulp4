@@ -4,11 +4,12 @@ var config = require('../config.js');
 gulp.task('copy:img', function () {
     return gulp
         .src([
-            config.src.img + '/**/*.{jpg,png,jpeg,svg,gif}',
-            '!' + config.src.img + '/svgo/**/*.*'
+            config.src.img + '/**/*.{jpg,png,jpeg,svg,gif,js,woff,woff2}',
+            '!' + config.src.img + '/video/*.*'
         ])
         .pipe(gulp.dest(config.dest.img));
 });
+
 
 gulp.task('copy:fonts', function () {
     return gulp
