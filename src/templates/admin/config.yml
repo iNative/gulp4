@@ -20,5 +20,6 @@ collections:
          - { label: "Logo", name: "logo", widget: "image"}
          - { label: "Intestazione", name: "intestazione", widget: "string"}
          - { label: "Contatti", name: "contatti", widget: "string"}
+         - { label: "Email", name: "email", widget: "string"}
          - { label: "Copertina Home page", name: "home_cover", widget: "image"}
 
