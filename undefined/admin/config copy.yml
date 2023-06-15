@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: html/assets/img
+public_folder: /assets/img
+logo_url: /assets/img/SantaLogo-Black.png
+collections:
+  - name: "Settings"
+    label: "Settings"
+    files:
+      - label: "offerte EN"
+        name: "offerte EN"
+        file: "html/locales/en/offerte.json"
+        fields:
+         - { label: "Nome", name: "title", widget: "string"}
+         - { label: "Disclaimer", name: "disclaimer", widget: "string"}
+         - { label: "Call to Action", name: "btn", widget: "string"}
+         - { label: "Offerta 1", name: "sezione1_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione1_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione1_lista1", widget: "markdown"}
+         - { label: "Offerta 2", name: "sezione2_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione2_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione2_lista1", widget: "markdown"}
+         - { label: "Offerta 3", name: "sezione3_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione3_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione3_lista1", widget: "markdown"}
+         - { label: "Offerta 4", name: "sezione4_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione4_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione4_lista1", widget: "markdown"}
+      - label: "offerte IT"
+        name: "offerte IT"
+        file: "html/locales/it/offerte.json"
+        fields:
+         - { label: "Nome", name: "title", widget: "string"}
+         - { label: "Disclaimer", name: "disclaimer", widget: "string"}
+         - { label: "Call to Action", name: "btn", widget: "string"}
+         - { label: "Offerta 1", name: "sezione1_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione1_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione1_lista1", widget: "markdown"}
+         - { label: "Offerta 2", name: "sezione2_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione2_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione2_lista1", widget: "markdown"}
+         - { label: "Offerta 3", name: "sezione3_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione3_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione3_lista1", widget: "markdown"}
+         - { label: "Offerta 4", name: "sezione4_titolo", widget: "string"}
+         - { label: "prezzo", name: "sezione4_prezzo", widget: "string"}
+         - { label: "dettagli", name: "sezione4_lista1", widget: "markdown"}
+  - name: "Pagine ITA"
+    label: "Pagine ITA"
+    files:
+      - label: "Accoglienza"
+        name: "Accoglienza"
+        identifier_field: titolo
+        file: "html/locales/it/accoglienza.json"
+        fields:
+         - { label: "Titolo", name: "titolo", widget: "string"}
+         - { label: "Sotto Titolo", name: "sottotitolo", widget: "string"}
+         - { label: "Corpo", name: "text", widget: "markdown"}
+         - { label: "Copertina", name: "cover", widget: "image"}

@@ -11,6 +11,11 @@ gulp.task('copy:img', function () {
 });
 
 
+gulp.task('copy:admin', function () {
+    return gulp
+        .src('src/templates/admin/config.yml')
+        .pipe(gulp.dest('build/admin'));
+});
 gulp.task('copy:fonts', function () {
     return gulp
         .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
@@ -31,13 +36,13 @@ gulp.task('copy:lib', function () {
 
 gulp.task('copy:rootfiles', function () {
     return gulp
-        .src(config.src.root + '/**/*.*')
+        .src(config.src.root + '/*.*')
         .pipe(gulp.dest(config.dest.root));
 });
 
 
 let build =  function(gulp) {
-    return gulp.parallel('copy:img', 'copy:fonts');
+    return gulp.parallel('copy:img', 'copy:fonts','copy:admin');
 };
 
 let watch =  function(gulp) {

@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: src/templates/assets/img
+public_folder: /assets/img
+logo_url: /assets/img/logo.png
+site_url: https://www.canottieritrinacria.palermo.it
+display_url: https://www.canottieritrinacria.palermo.it
+locale: "it"
+collections:
+
+  - name: "Impostazioni"
+    label: "Impostazioni"
+    files:
+      - label: "Generali"
+        name: "Generali"
+        file: "/src/templates/settings.json"
+        identifier_field: intestazione
+        fields:
+         - { label: "Logo", name: "logo", widget: "image"}
+         - { label: "Intestazione", name: "intestazione", widget: "string"}
+         - { label: "Contatti", name: "contatti", widget: "string"}
+         - { label: "Copertina Home page", name: "home_cover", widget: "image"}
+
