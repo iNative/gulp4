@@ -10,10 +10,7 @@ locale: "it"
 collections:
 
   - name: "Impostazioni"
-    label: "Impostazioni"
-    files:
-      - label: "Generali"
-        name: "Generali"
+  - label: "Generali"
         file: "/src/templates/settings.json"
         identifier_field: intestazione
         fields:
