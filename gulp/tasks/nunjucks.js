@@ -23,8 +23,8 @@ function renderHtml(onlyChanged) {
         .pipe(gulpif(onlyChanged, changed(config.dest.html)))
         .pipe(frontMatter({ property: 'data' }))
         .pipe(data(function() {
-				return require('../../'+config.src.templates +'/settings.json')
-			}))
+            return require('../../'+config.src.templates +'/settings.json')
+        }))
         .pipe(nunjucksRender({
             PRODUCTION: config.production,
             path: [config.src.templates]
