@@ -31,7 +31,7 @@ gulp.task('copy:lib', function () {
 
 gulp.task('copy:rootfiles', function () {
     return gulp
-        .src(config.src.root + '/*.*')
+        .src(config.src.root + '/**/*.*')
         .pipe(gulp.dest(config.dest.root));
 });
 
