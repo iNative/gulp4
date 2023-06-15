@@ -5,6 +5,7 @@ var gulpif         = require('gulp-if');
 var changed        = require('gulp-changed');
 var prettify       = require('gulp-prettify');
 var frontMatter    = require('gulp-front-matter');
+var data           = require('gulp-data');
 var config         = require('../config');
 
 function renderHtml(onlyChanged) {
@@ -21,6 +22,9 @@ function renderHtml(onlyChanged) {
         }))
         .pipe(gulpif(onlyChanged, changed(config.dest.html)))
         .pipe(frontMatter({ property: 'data' }))
+        .pipe(data(function() {
+				return require('../../'+config.src.templates +'/settings.json')
+			}))
         .pipe(nunjucksRender({
             PRODUCTION: config.production,
             path: [config.src.templates]
