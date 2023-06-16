@@ -22,4 +22,16 @@ collections:
          - { label: "Contatti", name: "contatti", widget: "string"}
          - { label: "Email", name: "email", widget: "string"}
          - { label: "Copertina Home page", name: "home_cover", widget: "image"}
+  - name: "Notizie"
+    label: "Notizie"
+    label_singular: "Notizia" # Used in the UI, ie: "New Post"
+    folder: "content/blog"
+    create: true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string"}
+      - { label: "Data Pubblicazione", name: "date", widget: "datetime" }
+      - { label: "Sotto Titolo", name: "subtitle", widget: "string", required: false}
+      - { label: "Copertina", name: "cover", widget: "image", required: false}
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Corpo", name: "body", widget: "markdown"}
 

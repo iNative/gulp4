@@ -8,6 +8,9 @@ var frontMatter    = require('gulp-front-matter');
 var data           = require('gulp-data');
 var config         = require('../config');
 
+
+
+
 function renderHtml(onlyChanged) {
     nunjucksRender.nunjucks.configure({
         watch: false,
@@ -15,6 +18,7 @@ function renderHtml(onlyChanged) {
         lstripBlocks: false
     });
 
+	
     return gulp
         .src([config.src.templates + '/**/[^_]*.html'])
         .pipe(plumber({
@@ -38,6 +42,18 @@ function renderHtml(onlyChanged) {
         }))
         .pipe(gulp.dest(config.dest.html));
 }
+
+function copymd() {
+	return gulp
+	.src([config.src.blog + '/campioni-ditalia.md'])
+    
+	.pipe(gulp.dest(config.src.content ));
+}
+gulp.task('markdown', (cb) => {
+	return copymd();
+	cb();
+});
+
 
 gulp.task('nunjucks', function() {
     return renderHtml();

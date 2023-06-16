@@ -26,6 +26,7 @@ collections:
     label: "Notizie"
     label_singular: "Notizia" # Used in the UI, ie: "New Post"
     folder: "content/blog"
+    extension: "json"
     create: true
     fields:
       - { label: "Titolo", name: "title", widget: "string"}

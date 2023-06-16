@@ -6,6 +6,12 @@
 var gulp = require("gulp");
 var config = require("./gulp/config");
 
+
+
+const concat = require('gulp-concat');
+const markdownToJson = require('gulp-markdown-to-json');
+
+
 function getTaskBuild(task) {
   return require("./gulp/tasks/" + task).build(gulp);
 }
@@ -30,6 +36,19 @@ gulp.task("svgo:watch", getTaskWatch("svgo"));
 //gulp.task("webpack:watch", getTaskWatch("webpack"));
 //gulp.task("list-pages:watch", getTaskWatch("list-pages"));
 gulp.task("sprite:svg:watch", getTaskWatch("sprite-svg"));
+
+
+
+
+gulp.task('mergeMarkdown', function () {
+  return gulp.src('content/blog/*.md')
+    .pipe(markdownToJson())
+    .pipe(concat('merged.json'))
+    .pipe(gulp.dest('content/blog'));
+});
+ 
+
+
 
 // high order tasks
 function build(cb) {
@@ -95,5 +114,6 @@ gulp.task(
     "sass:watch"
   )
 );
+
 
 gulp.task("default", gulp.series(["build:dev", "server", "watch"]));
