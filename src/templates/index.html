@@ -15,7 +15,10 @@ logo = "black"
           <div class="col-lg-9 col-xl-8">
             <h5>{{post.quando}}</h5>
             <h1 class="display-2">{{post.title}}</h1>
-            <p class="lead mb-4">{{post.subtitle}}<br/> {{post.dove}}</p>
+            <p class="lead mb-4">{{post.dove}}
+				<br/>
+			 {{ post.body | truncate(30,true,' ...') }}
+		</p>
             <a href="{{post.link}}" class="btn btn-primary-2 btn-lg ">Leggi tutto</a>
           </div>
         </div>
