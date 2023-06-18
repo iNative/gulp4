@@ -43,35 +43,7 @@ function renderHtml(onlyChanged) {
         .pipe(gulp.dest(config.dest.html));
 }
 
-function renderBlog() {
-	
-	// per each json file in /content/blog
-	// create a html nunjucks page from the post.html template in /content/templates and save it within /src/templates 
-	// store post cards data in a array
-	// dump array data within /src/templates/data/data.html
-	// now run the nunjucks task aka renderHtml()
-	
-		return gulp
-		    .src([config.src.templates + '/**/[^_]*.html'])
-		    .pipe(plumber({
-		        errorHandler: config.errorHandler
-		    }))
-		    .pipe(data(function() {
-		        return require('../../'+config.src.templates +'/settings.json')
-		    }))
-		    .pipe(nunjucksRender({
-		        PRODUCTION: config.production,
-		        path: [config.src.templates]
-		    }))
-		    .pipe(prettify({
-		        indent_size: 2,
-		        wrap_attributes: 'auto', // 'force'
-		        preserve_newlines: false,
-		        // unformatted: [],
-		        end_with_newline: true
-		    }))
-		    .pipe(gulp.dest(config.dest.html));
-}
+
 
 
 

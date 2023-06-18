@@ -26,6 +26,8 @@ gulp.task("sass", getTaskBuild("sass"));
 gulp.task("server", getTaskBuild("server"));
 gulp.task("svgo", getTaskBuild("svgo"));
 gulp.task("loadBlogContent", getTaskBuild("loadBlogContent"));
+gulp.task("generateDataFiles", getTaskBuild("generateDataFiles"));
+
 //gulp.task("webpack", getTaskBuild("webpack"));
 //gulp.task("list-pages", getTaskBuild("list-pages"));
 gulp.task("sprite:svg", getTaskBuild("sprite-svg"));
@@ -52,6 +54,8 @@ function build(cb) {
     "sprite:svg",
     "svgo",
     "sass",
+    "loadBlogContent",
+    "generateDataFiles",
     "nunjucks",
     // 'webpack',
     "copy"
@@ -76,7 +80,10 @@ gulp.task(
     "sprite:svg",
     "svgo",
     "sass",
+    "loadBlogContent",
+    "generateDataFiles",
     "nunjucks",
+    
     // 'webpack',
     "copy",
     // "list-pages"
@@ -90,7 +97,10 @@ gulp.task(
     "sprite:svg",
     "svgo",
     "sass",
+    "loadBlogContent",
+    "generateDataFiles",
     "nunjucks",
+    
     //'webpack',
     // "list-pages",
     "copy"

@@ -11,6 +11,7 @@ gulp.task('loadBlogContent', function(cb) {
       let fileName = path.basename(file.path);
       let fileContent = JSON.parse(fs.readFileSync(file.path, 'utf8'));
       blogContent[fileName] = fileContent;
+      blogContent[fileName].link = fileName.replace(/\.json$/g, ".html");
     })
     .on('end', function() {
       console.log('Loaded blog content:', blogContent);
