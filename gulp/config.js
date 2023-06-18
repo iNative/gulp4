@@ -8,6 +8,7 @@ var config = {
     production: production,
 
     src: {
+		pages        : 'src/pages',
         root         : 'src',
         templates    : 'src/templates',
         templatesData: 'src/templates/data',
@@ -17,8 +18,8 @@ var config = {
 		content         : 'content',
         // path for sass files that will be generated automatically via some of tasks
         sassGen      : 'src/sass/generated',
-        js           : 'src/templates/assets/js',
-        img          : 'src/templates/assets',
+        js           : 'assets/js',
+        img          : 'assets',
         svg          : 'src/img/svg',
         icons        : 'src/icons',
         // path to png sources for sprite:png task
