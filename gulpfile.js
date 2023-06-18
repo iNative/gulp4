@@ -9,7 +9,7 @@ var config = require("./gulp/config");
 
 
 const concat = require('gulp-concat');
-const markdownToJson = require('gulp-markdown-to-json');
+
 
 
 function getTaskBuild(task) {
@@ -25,6 +25,7 @@ gulp.task("nunjucks", getTaskBuild("nunjucks"));
 gulp.task("sass", getTaskBuild("sass"));
 gulp.task("server", getTaskBuild("server"));
 gulp.task("svgo", getTaskBuild("svgo"));
+gulp.task("loadBlogContent", getTaskBuild("loadBlogContent"));
 //gulp.task("webpack", getTaskBuild("webpack"));
 //gulp.task("list-pages", getTaskBuild("list-pages"));
 gulp.task("sprite:svg", getTaskBuild("sprite-svg"));
@@ -40,13 +41,7 @@ gulp.task("sprite:svg:watch", getTaskWatch("sprite-svg"));
 
 
 
-gulp.task('mergeMarkdown', function () {
-  return gulp.src('content/blog/*.md')
-    .pipe(markdownToJson())
-    .pipe(concat('merged.json'))
-    .pipe(gulp.dest('content/blog'));
-});
- 
+
 
 
 
