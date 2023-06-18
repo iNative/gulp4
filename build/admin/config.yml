@@ -29,8 +29,10 @@ collections:
     extension: "json"
     create: true
     fields:
-      - { label: "Titolo", name: "title", widget: "string"}
       - { label: "Data Pubblicazione", name: "date", widget: "datetime" }
+      - { label: "Dove", name: "dove", widget: "string", required: false}
+      - { label: "Quando", name: "quando", widget: "string", required: false}
+      - { label: "Titolo", name: "title", widget: "string"}
       - { label: "Sotto Titolo", name: "subtitle", widget: "string", required: false}
       - { label: "Copertina", name: "cover", widget: "image", required: false}
       - { label: "Tags", name: "tags", widget: "string" }
