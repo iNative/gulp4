@@ -83,7 +83,7 @@ logo = "black"
              
             </article>
 			<script>
-				let a = "{{ post.body }} ";
+				let a = "{{ post.body | safe }} ";
 			    document.getElementById('postBody').innerHTML =
 			      marked.parse(a);
 			  </script>
