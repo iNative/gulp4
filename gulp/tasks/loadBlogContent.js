@@ -11,7 +11,12 @@ gulp.task('loadBlogContent', function(cb) {
       let fileName = path.basename(file.path);
       let fileContent = JSON.parse(fs.readFileSync(file.path, 'utf8'));
       blogContent[fileName] = fileContent;
-      blogContent[fileName].link = fileName.replace(/\.json$/g, ".html");
+	  
+	  if(blogContent[fileName].link=="") 
+	  {
+	  	blogContent[fileName].link = fileName.replace(/\.json$/g, ".html");
+	  }
+      
 	  let regex = /\n/g;
 	  let replacedText = blogContent[fileName].body.replace(regex, "\\n");
 	  
