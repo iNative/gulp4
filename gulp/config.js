@@ -30,7 +30,11 @@ var config = {
         iconsFont    : 'src/icons',
         fonts        : 'src/fonts',
         lib          : 'src/lib',
-        data         : 'src/data'
+		// decap and nunjucks blog config
+		njDatafile       : 'src/templates/data/data.html',
+		decapDatafile : 'content/blogContent.json',
+        njDataDir         : 'src/templates/data',
+		postTemplate : 'src/templates/post.html'
     },
     dest: {
         root : destPath,

@@ -22,6 +22,7 @@ collections:
          - { label: "Contatti", name: "contatti", widget: "string"}
          - { label: "Email", name: "email", widget: "string"}
          - { label: "Copertina Home page", name: "home_cover", widget: "image"}
+         - { label: "Blog", name: "blog", widget: "boolean"}
   - name: "Notizie"
     label: "Notizie"
     label_singular: "Notizia" # Used in the UI, ie: "New Post"

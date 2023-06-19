@@ -1,11 +1,12 @@
 const gulp = require('gulp');
 const fs = require('fs');
 const path = require('path');
+var config         = require('../config');
 
 gulp.task('generateDataFiles', function (done) {
-  const contentPath = 'content/blogContent.json';
-  const templatePath = 'src/templates/post.html';
-  const dataDirectory = 'src/templates/data';
+  const contentPath = config.src.decapDatafile;
+  const templatePath = config.src.postTemplate;
+  const dataDirectory = config.src.njDataDir;
 
   const blogContent = JSON.parse(fs.readFileSync(contentPath));
 
@@ -17,7 +18,7 @@ gulp.task('generateDataFiles', function (done) {
 
     fs.writeFileSync(dataFilePath, templateData);
 
-    const newTemplatePath = path.join('src/templates', postName.replace('.json', '') + '.html');
+    const newTemplatePath = path.join(config.src.templates, postName.replace('.json', '') + '.html');
     const postTemplate = fs.readFileSync(templatePath, 'utf8');
     const updatedTemplate = postTemplate.replace('data.html', dataFileName);
 

@@ -5,6 +5,7 @@
   "contatti": "+39 338 704 3123",
   "email":"canottieritrinacria@virgilio.it",
   "home_cover": "/assets/img/flag.jpg",
-  "logo": "/assets/img/logo.png"
+  "logo": "/assets/img/logo.png",
+  "blog": false
 
 }

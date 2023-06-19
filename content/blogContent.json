@@ -1,13 +1,4 @@
 {
-  "campionati-italiani-di-canoa-a-milano-8-titoli-allidroscalo.json": {
-    "date": "2023-06-18T16:15:44.049Z",
-    "title": "Campionati Italiani di canoa a Milano, 8 titoli all'idroscalo",
-    "subtitle": "La Trinacria detta legge",
-    "cover": "/assets/img/dili.jpg",
-    "body": "Corpo",
-    "tags": "canoa",
-    "link": "campionati-italiani-di-canoa-a-milano-8-titoli-allidroscalo.html"
-  },
   "canoa-giovani.json": {
     "date": "2023-06-16T13:38:31.173Z",
     "title": "Canoa Giovani",
@@ -15,6 +6,8 @@
     "cover": "/assets/img/article-1.jpg",
     "body": "Corpo",
     "tags": "tags",
+    "dove": "Castel Gandolfo , Roma",
+    "quando": "2-4 Giugno 2023",
     "link": "canoa-giovani.html"
   }
 }

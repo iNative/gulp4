@@ -6,7 +6,7 @@ var config         = require('../config');
 gulp.task('loadBlogContent', function(cb) {
   let blogContent = {};
 
-  return gulp.src('content/blog/*.json')
+  return gulp.src(config.src.blog +'/*.json')
     .on('data', function(file) {
       let fileName = path.basename(file.path);
       let fileContent = JSON.parse(fs.readFileSync(file.path, 'utf8'));
@@ -15,18 +15,18 @@ gulp.task('loadBlogContent', function(cb) {
     })
     .on('end', function() {
       console.log('Loaded blog content:', blogContent);
-	  fs.writeFileSync('content/blogContent.json', JSON.stringify(blogContent, null, 2));
-	       console.log('Saved blog content to content/blogContent.json');
+	  fs.writeFileSync(config.src.decapDatafile, JSON.stringify(blogContent, null, 2));
+	       console.log('Saved blog content to '+ config.src.decapDatafile);
     });
 	cb();
 });
 
 gulp.task('transformData', function(cb) {
-  let blogContent = JSON.parse(fs.readFileSync('content/blogContent.json', 'utf8'));
+  let blogContent = JSON.parse(fs.readFileSync(config.src.decapDatafile, 'utf8'));
   let transformedContent = `{% set list = [${Object.values(blogContent).map(JSON.stringify).join(',\n')}] %}`;
 
-  fs.writeFileSync('src/templates/data/data.html', transformedContent);
-  console.log('Transformed data saved to src/templates/data/data.html');
+  fs.writeFileSync(config.src.njDatafile, transformedContent);
+  console.log('Transformed data saved to' + config.src.njDatafile);
   cb();
 });
 
