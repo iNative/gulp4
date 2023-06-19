@@ -37,7 +37,7 @@ logo = "white"
 	                  <div class="mr-2">
 	                    <a href="/{{post.link}}">{{post.tags}}</a>
 	                  </div>
-	                  <span class="text-muted">{{ post.date | truncate(10,true,'') }}
+	                  <span class="text-muted">{{ post.date | truncate(50,true,'') }}
 </span>
 	                </div>
 	                <span class=" d-none badge bg-primary-alt text-primary">
@@ -52,7 +52,7 @@ logo = "white"
 	              </p>
 	  			<script>
 	  			    document.getElementById('postPre').innerHTML =
-	  			      marked.parse(' {{ post.body | truncate(30,true,' ...') }} ');
+	  			      marked.parse(' {{ post.body | truncate(80,true,' ...') }} ');
 	  			  </script>
 	              <div class="d-flex align-items-center mt-3">
 	                <img src="/assets/img/apple-touch-icon.png" alt="Image" class="avatar avatar-sm">
