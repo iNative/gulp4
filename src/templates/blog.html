@@ -47,17 +47,7 @@ logo = "white"
 	              <a href="{{post.link}}">
 	                <h4>{{post.title}}</h4>
 	              </a>
-	              <p id="postPre" class="flex-grow-1">
-	             {{ post.body | safe }}
-	              </p>
-	  			<script>
-					
-					let a = "{{ post.body | safe | truncate(110,true,'...') }} ";
-				    document.getElementById('postPre').innerHTML =
-				      marked.parse(a);
-					  
-	  			    
-	  			  </script>
+	             
 	              <div class="d-flex align-items-center mt-3">
 	                  {% if post.author == "Redazione" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
 					  {% if post.author == "" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
