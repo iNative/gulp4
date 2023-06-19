@@ -80,8 +80,9 @@
              
             </article>
 			<script>
+				let a = "{{ post.body}}";
 			    document.getElementById('postBody').innerHTML =
-			      marked.parse(' {{ post.body}} ');
+			      marked.parse(a);
 			  </script>
           </div>
         </div>
