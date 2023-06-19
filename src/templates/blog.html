@@ -48,17 +48,21 @@ logo = "white"
 	                <h4>{{post.title}}</h4>
 	              </a>
 	              <p id="postPre" class="flex-grow-1">
-	             
+	             {{ post.body | safe }}
 	              </p>
 	  			<script>
-	  			    document.getElementById('postPre').innerHTML =
-	  			      marked.parse(' {{ post.body | truncate(80,true,' ...') }} ');
+					
+					let a = "{{ post.body | safe }} ";
+				    document.getElementById('postPre').innerHTML =
+				      marked.parse(a);
+					  
+	  			    
 	  			  </script>
 	              <div class="d-flex align-items-center mt-3">
-	                <img src="/assets/img/apple-touch-icon.png" alt="Image" class="avatar avatar-sm">
+	                <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
 	                <div class="ml-1">
 	                  <span class="text-small text-muted">di</span>
-	                  <span class="text-small">Redazione</span>
+	                  <span class="text-small">Federcanoa</span>
 	                </div>
 	              </div>
 	            </div>

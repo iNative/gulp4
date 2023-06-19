@@ -22,12 +22,22 @@
       <div class="container layer-2">
         <div class="row py-6 min-vh-80 align-items-center pt-5" data-aos="fade-up">
           <div class="col-lg-9 col-xl-8">
-            <h5>{{post.quando}}</h5>
+            <h5>{{post.quando}} | {{post.dove}}</h5>
+			
             <h1 class="display-2">{{post.title}}</h1>
-            <p class="lead mb-4">{{post.dove}}
-				<br/>
-			 {{ post.body | truncate(30,true,' ...') }}
+            
+			  <p class="lead mb-4" id="postPre">
+			
+			 
 		</p>
+		<script>
+			
+			let a = "{{ post.body | safe }} ";
+		    document.getElementById('postPre').innerHTML =
+		      marked.parse(a);
+			  
+		    
+		  </script>
             <a href="{{post.link}}" class="btn btn-primary-2 btn-lg ">Leggi tutto</a>
           </div>
         </div>
