@@ -1,3 +1,6 @@
+{% set 
+logo = "black" 
+%}
 {% extends "layouts/_default.html" %}
 
 {% block content %}
@@ -10,11 +13,11 @@
             <div class="col py-2">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex">
-                  <div class="text-small text-muted mr-1">Reading:</div>
-                  <div class="text-small">Navigating the complexity of change aversion</div>
+                  <div class="text-small text-muted mr-1">Stai leggendo:</div>
+                  <div class="text-small">{{ posts.list[0].title}}</div>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="text-small text-muted">Share:</span>
+                  <span class="text-small text-muted">Condividi:</span>
                   <div class="d-flex ml-1">
                     <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
                       <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
@@ -42,7 +45,7 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="#">Blog</a>
+                    <a href="/blog.html">Blog</a>
                   </li>
                   <li class="breadcrumb-item">
                     <a href="#">{{ post.tags}}</a>
@@ -75,8 +78,8 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-xl-7 col-lg-8 col-md-10">
-            <article id="postBody" class="article">
+          <div class="col-xl-7 col-lg-8 col-md-10 pt-3">
+            <article id="postBody" class="article ">
              
             </article>
 			<script>
