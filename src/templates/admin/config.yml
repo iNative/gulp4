@@ -31,7 +31,7 @@ collections:
     create: true
     fields:
       - { label: "Data Pubblicazione", name: "date", widget: "datetime" }
-      - { label: "Autore", name: "author", widget: "list", default:["Redazione","Federcanoa"] }
+      - { label: "Autore", name: "author", widget: "list", default:['Redazione','Federcanoa'] }
       - { label: "Link", name: "link", widget: "string",required: false}
       - { label: "Dove", name: "dove", widget: "string", required: false}
       - { label: "Quando", name: "quando", widget: "string", required: false}
