@@ -47,9 +47,13 @@ logo = "white"
 	              <a href="/{{post.link}}">
 	                <h4>{{post.title}}</h4>
 	              </a>
-	              <p class="flex-grow-1">
-	             {{ post.body | truncate(30,true,' ...') }}
+	              <p id="postPre" class="flex-grow-1">
+	             
 	              </p>
+	  			<script>
+	  			    document.getElementById('postPre').innerHTML =
+	  			      marked.parse(' {{ post.body | truncate(30,true,' ...') }} ');
+	  			  </script>
 	              <div class="d-flex align-items-center mt-3">
 	                <img src="/assets/img/apple-touch-icon.png" alt="Image" class="avatar avatar-sm">
 	                <div class="ml-1">

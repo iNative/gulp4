@@ -161,7 +161,12 @@
                 <a href="/canoa-giovani.html">
                   <h4>Canoa Giovani</h4>
                 </a>
-                <p class="flex-grow-1"> Corpo </p>
+                <p id="postPre" class="flex-grow-1">
+                </p>
+                <script>
+                  document.getElementById('postPre').innerHTML = marked.parse(' Corpo ');
+
+                </script>
                 <div class="d-flex align-items-center mt-3">
                   <img src="/assets/img/apple-touch-icon.png" alt="Image" class="avatar avatar-sm">
                   <div class="ml-1">
