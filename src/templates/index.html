@@ -4,7 +4,10 @@
 {% set logo = "white" 
 %}
  {% endif %}
-
+{% if blog == false %} 
+{% set logo = "black" 
+%}
+ {% endif %}
 {% extends "layouts/_default.html" %}
 
 {% block content %}
