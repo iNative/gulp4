@@ -32,7 +32,7 @@
 		</p>
 		<script>
 			
-			let a = "{{ post.body | safe }} ";
+			let a = "{{ post.body | safe | truncate(110,true,'...') }} ";
 		    document.getElementById('postPre').innerHTML =
 		      marked.parse(a);
 			  
