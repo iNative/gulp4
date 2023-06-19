@@ -30,10 +30,10 @@
       <div class="loading-animation"></div>
     </div>
     <div class="navbar-container ">
-      <nav class="navbar navbar-expand-lg navbar-dark " data-overlay data-sticky="top">
+      <nav class="navbar navbar-expand-lg  navbar-light" data-overlay data-sticky="top">
         <div class="container">
           <a class="navbar-brand fade-page" href="index.html">
-            <img src="assets/img/logo-white.png" alt="Leap" style="height: 48px;" />
+            <img src="assets/img/logo.png" alt="Leap" style="height: 48px;" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -124,212 +124,189 @@
         </div>
       </nav>
     </div>
-    <section class="has-divider text-light jarallax bg-dark" data-jarallax data-speed="0.5" data-overlay>
-      <img src="assets/img/cannata.jpg" alt="" class="jarallax-img opacity-50">
+    <div class="article-progress" data-sticky="below-nav">
+      <progress class="reading-position" value="0"></progress>
+      <div class="article-progress-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col py-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <div class="text-small text-muted mr-1">Stai leggendo:</div>
+                  <div class="text-small">Doppietta a Mantova</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="text-small text-muted">Condividi:</span>
+                  <div class="d-flex ml-1">
+                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                      <img class="icon" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                    </a>
+                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                      <img class="icon" src="assets/img/icons/social/linkedin.svg" alt="linkedin social icon" data-inject-svg />
+                    </a>
+                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                      <img class="icon" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="pb-0 pb-5">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 col-md-8">
-            <h1 class="display-4">K-log</h1>
-            <p class="lead mb-0">Cronache dal campo di gara.</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/blog.html">Blog</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Canoa Fondo</a>
+                  </li>
+                </ol>
+              </nav>
+              <span class="badge bg-primary-alt text-primary d-none">
+                <img class="icon bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />21</span>
+            </div>
+            <h1>Doppietta a Mantova</h1>
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2">
+              </a>
+              <div>
+                <div>di <a href="#">Redazione</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" data-reading-position>
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-10 col-xl-8">
+            <img src="https://www.federcanoa.it/images/joomgallery/originals/fotogallery_58/campionato_italiano_di_fondo_-_mantova_7_aprile_2019_74/_dsc0048_20190408_1249117995.jpeg" alt="Image" class="rounded">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10 pt-3">
+            <article id="postBody" class="article ">
+            </article>
+            <script>
+              let a = "Due i Titoli di Fondo conquistati: Cat. Ragazzi con Marco Alaimo e Cat. Under 23 con  Agnese Celestino ed Elisabetta Maffioli. ";
+              document.getElementById('postBody').innerHTML = marked.parse(a);
+
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-divider">
+      <div class="container pt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-10">
+            <hr>
+            <div class="d-flex align-items-center">
+              <span class="text-small mr-1">Condividi questo Post:</span>
+              <div class="d-flex mx-2">
+                <a href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                </a>
+                <a href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                </a>
+                <a href="#" class="btn btn-round btn-primary mx-1">
+                  <img class="icon icon-sm" src="assets/img/icons/social/linkedin.svg" alt="linkedin social icon" data-inject-svg />
+                </a>
+              </div>
+            </div>
+            <hr>
+            <h5 class="my-4 d-none">4 Comments</h5>
+            <ol class="comments d-none">
+              <li class="comment">
+                <div class="d-flex align-items-center text-small">
+                  <img src="assets/img/avatars/female-4.jpg" alt="Angela Zhao" class="avatar avatar-sm mr-2">
+                  <div class="text-dark mr-1">Angela Zhao</div>
+                  <div class="text-muted">56 minutes ago</div>
+                </div>
+                <div class="my-2"> Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                <div>
+                  <a href="#" class="text-small">Reply</a>
+                </div>
+                <ol class="comments">
+                  <li class="comment">
+                    <div class="d-flex align-items-center text-small">
+                      <img src="assets/img/avatars/male-5.jpg" alt="Lenny Sims" class="avatar avatar-sm mr-2">
+                      <div class="text-dark mr-1">Lenny Sims</div>
+                      <div class="text-muted">just now</div>
+                    </div>
+                    <div class="my-2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                    <div>
+                      <a href="#" class="text-small">Reply</a>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+              <li class="comment">
+                <div class="d-flex align-items-center text-small">
+                  <img src="assets/img/avatars/female-1.jpg" alt="Sarah Priestly" class="avatar avatar-sm mr-2">
+                  <div class="text-dark mr-1">Sarah Priestly</div>
+                  <div class="text-muted">2 hours ago</div>
+                </div>
+                <div class="my-2"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </div>
+                <div>
+                  <a href="#" class="text-small">Reply</a>
+                </div>
+              </li>
+              <li class="comment">
+                <div class="d-flex align-items-center text-small">
+                  <img src="assets/img/avatars/male-1.jpg" alt="Benjamin Cameron" class="avatar avatar-sm mr-2">
+                  <div class="text-dark mr-1">Benjamin Cameron</div>
+                  <div class="text-muted">3 hours ago</div>
+                </div>
+                <div class="my-2"> Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem </div>
+                <div>
+                  <a href="#" class="text-small">Reply</a>
+                </div>
+              </li>
+            </ol>
+            <hr>
+            <h5 class="my-4 d-none">Post a comment</h5>
+            <form class="d-none">
+              <div class="row d-none ">
+                <div class="col-md-6 mb-1">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="comment-name">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-1">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address" name="comment-email">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group d-none">
+                <textarea class="form-control" name="comment-text" rows="7" placeholder="Comment"></textarea>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="comment-form-opt-in">
+                  <label class="custom-control-label text-small" for="comment-form-opt-in">Notify me when someone replies</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
       <div class="divider">
-        <img src="assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row mb-4" data-isotope-collection data-sort-ascending="true">
-          <div class="col-md-6 col-lg-4" data-isotope-item>
-            <div class="card">
-              <a href="https://www.federcanoa.it/home/news/23-news-velocita/6059-mondiali-italia-che-spettacolo-in-danimarca-due-medaglie-d%E2%80%99oro-nel-k1-200-e-c2-500-e-un-bronzo-nel-c1-500.html">
-                <!-- generate post link--->
-                <img src="https://www.federcanoa.it/images/IMG_2660.JPG" alt="Image" class="card-img-top" />
-              </a>
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="text-small d-flex">
-                    <div class="mr-2">
-                      <a href="https://www.federcanoa.it/home/news/23-news-velocita/6059-mondiali-italia-che-spettacolo-in-danimarca-due-medaglie-d%E2%80%99oro-nel-k1-200-e-c2-500-e-un-bronzo-nel-c1-500.html">Campionato del Mondo</a>
-                    </div>
-                    <span class="text-muted">2021-09-19 </span>
-                  </div>
-                  <span class=" d-none badge bg-primary-alt text-primary">
-                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />12 </span>
-                </div>
-                <a href="https://www.federcanoa.it/home/news/23-news-velocita/6059-mondiali-italia-che-spettacolo-in-danimarca-due-medaglie-d%E2%80%99oro-nel-k1-200-e-c2-500-e-un-bronzo-nel-c1-500.html">
-                  <h4>Di Liberto Campione del Mondo K1 200</h4>
-                </a>
-                <p id="postPre" class="flex-grow-1"> Erano vent’anni che l’Italia non saliva sul gradino più alto del podio in una competizione mondiale. </p>
-                <script>
-                  let a = "Erano vent’anni che l’Italia non saliva sul gradino più alto del podio in una competizione mondiale. ";
-                  document.getElementById('postPre').innerHTML = marked.parse(a);
-
-                </script>
-                <div class="d-flex align-items-center mt-3">
-                  <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
-                  <div class="ml-1">
-                    <span class="text-small text-muted">di</span>
-                    <span class="text-small">Federcanoa</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-isotope-item>
-            <div class="card">
-              <a href="https://www.federcanoa.it/home/news/23-news-velocita/5213-coppa-del-mondo-rizza-e-di-liberto-da-sogno,-oro-nel-k2-200-metri.html">
-                <!-- generate post link--->
-                <img src="https://www.federcanoa.it/images/rizza_diliberto_k2200_duisburg2019.jpg" alt="Image" class="card-img-top" />
-              </a>
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="text-small d-flex">
-                    <div class="mr-2">
-                      <a href="https://www.federcanoa.it/home/news/23-news-velocita/5213-coppa-del-mondo-rizza-e-di-liberto-da-sogno,-oro-nel-k2-200-metri.html">World Cup</a>
-                    </div>
-                    <span class="text-muted">2019-06-02 </span>
-                  </div>
-                  <span class=" d-none badge bg-primary-alt text-primary">
-                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />12 </span>
-                </div>
-                <a href="https://www.federcanoa.it/home/news/23-news-velocita/5213-coppa-del-mondo-rizza-e-di-liberto-da-sogno,-oro-nel-k2-200-metri.html">
-                  <h4>Di Liberto e Rizza Campioni del Mondo</h4>
-                </a>
-                <p id="postPre" class="flex-grow-1"> Il palermitano Di liberto ORO nel K2 200 metri.\nSul gradino più alto del podio in coppia con Rizza, </p>
-                <script>
-                  let a = "Il palermitano Di liberto ORO nel K2 200 metri.\nSul gradino più alto del podio in coppia con Rizza, ";
-                  document.getElementById('postPre').innerHTML = marked.parse(a);
-
-                </script>
-                <div class="d-flex align-items-center mt-3">
-                  <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
-                  <div class="ml-1">
-                    <span class="text-small text-muted">di</span>
-                    <span class="text-small">Federcanoa</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-isotope-item>
-            <div class="card">
-              <a href="http://www.federcanoa.it/home/news/23-news-velocita/5134-titoli-tricolori-di-fondo-assegnati-sul-lago-inferiore-di-mantova,-show-sulla-lunga-distanza.html">
-                <!-- generate post link--->
-                <img src="https://www.federcanoa.it/images/joomgallery/originals/fotogallery_58/campionato_italiano_di_fondo_-_mantova_7_aprile_2019_74/_dsc0048_20190408_1249117995.jpeg" alt="Image" class="card-img-top" />
-              </a>
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="text-small d-flex">
-                    <div class="mr-2">
-                      <a href="http://www.federcanoa.it/home/news/23-news-velocita/5134-titoli-tricolori-di-fondo-assegnati-sul-lago-inferiore-di-mantova,-show-sulla-lunga-distanza.html">Canoa Fondo</a>
-                    </div>
-                    <span class="text-muted">2019-04-07 </span>
-                  </div>
-                  <span class=" d-none badge bg-primary-alt text-primary">
-                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />12 </span>
-                </div>
-                <a href="http://www.federcanoa.it/home/news/23-news-velocita/5134-titoli-tricolori-di-fondo-assegnati-sul-lago-inferiore-di-mantova,-show-sulla-lunga-distanza.html">
-                  <h4>Doppietta a Mantova</h4>
-                </a>
-                <p id="postPre" class="flex-grow-1"> Due i Titoli di Fondo conquistati: Cat. Ragazzi con Marco Alaimo e Cat. Under 23 con  Agnese Celestino ed Elisabetta Maffioli. </p>
-                <script>
-                  let a = "Due i Titoli di Fondo conquistati: Cat. Ragazzi con Marco Alaimo e Cat. Under 23 con  Agnese Celestino ed Elisabetta Maffioli. ";
-                  document.getElementById('postPre').innerHTML = marked.parse(a);
-
-                </script>
-                <div class="d-flex align-items-center mt-3">
-                  <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
-                  <div class="ml-1">
-                    <span class="text-small text-muted">di</span>
-                    <span class="text-small">Federcanoa</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4" data-isotope-item>
-            <div class="card">
-              <a href="http://www.federcanoa.it/home/news/19-news-maratona/5243-maratona-turin-kayak-marathon-vincenzi-maffioli.html">
-                <!-- generate post link--->
-                <img src="https://lh3.googleusercontent.com/pw/AJFCJaWvD_5xI_OKOYv7-mKdoJdVfzTkP0fqac2yiIZaLSIoJgoJhmaXx2pEPQba6LeIX4l1CuYQnXUI8dNdAehQD96FCGaQ623dOlxZE3KEqontLrweUw1ZvD4PGXojeDR3RgFW_n7qA2ncb2TrVsnuOsV7=w3070-h2046-s-no?authuser=0" alt="Image" class="card-img-top" />
-              </a>
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between mb-3">
-                  <div class="text-small d-flex">
-                    <div class="mr-2">
-                      <a href="http://www.federcanoa.it/home/news/19-news-maratona/5243-maratona-turin-kayak-marathon-vincenzi-maffioli.html">Turin Kayak Marathon</a>
-                    </div>
-                    <span class="text-muted">2019-06-22 </span>
-                  </div>
-                  <span class=" d-none badge bg-primary-alt text-primary">
-                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />12 </span>
-                </div>
-                <a href="http://www.federcanoa.it/home/news/19-news-maratona/5243-maratona-turin-kayak-marathon-vincenzi-maffioli.html">
-                  <h4>Oro per Elisabbetta Maffioli</h4>
-                </a>
-                <p id="postPre" class="flex-grow-1"> La nostra Elisabetta Maffioli si aggiudica la prova Femminile della Turin Kayak Marathon vincendo con il tempo di 01:42:16,21. </p>
-                <script>
-                  let a = "La nostra Elisabetta Maffioli si aggiudica la prova Femminile della Turin Kayak Marathon vincendo con il tempo di 01:42:16,21. ";
-                  document.getElementById('postPre').innerHTML = marked.parse(a);
-
-                </script>
-                <div class="d-flex align-items-center mt-3">
-                  <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
-                  <div class="ml-1">
-                    <span class="text-small text-muted">di</span>
-                    <span class="text-small">Federcanoa</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" d-none row justify-content-between align-items-center">
-          <div class="col-auto">
-            <a href="#" class="btn btn-outline-white">Previous</a>
-          </div>
-          <div class="col-auto">
-            <nav>
-              <ul class="pagination mb-0">
-                <li class="page-item active"><a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-auto">
-            <a href="#" class="btn btn-outline-white">Next</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="d-none">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-xl-7 col-lg-8 col-md-10">
-            <h3 class="h2 mb-5">Get great articles direct to your inbox</h3>
-            <form action="/forms/mailchimp.php" data-form-email novalidate>
-              <div class="d-sm-flex flex-column flex-sm-row mb-3 justify-content-center">
-                <input type="email" name="email" class="mr-sm-1 mb-2 mb-sm-0 form-control form-control-lg" placeholder="Email Address" required>
-                <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft"></div>
-                <button type="submit" class="ml-sm-1 btn btn-lg btn-primary btn-loading" data-loading-text="Sending">
-                  <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
-                  <span>Subscribe</span>
-                </button>
-              </div>
-              <div>
-                <div class="d-none alert alert-success" role="alert" data-success-message> Thanks, a member of our team will be in touch shortly. </div>
-                <div class="d-none alert alert-danger" role="alert" data-error-message> Please fill all fields correctly. </div>
-              </div>
-            </form>
-            <div class="text-small text-muted"> We’ll never share your details with third parties. <br class="visible-md" />View our <a href="#">Privacy Policy</a> for more info. </div>
-          </div>
-        </div>
+        <img class="bg-primary-2" src="assets/img/dividers/divider-1.svg" alt="divider graphic" data-inject-svg />
       </div>
     </section>
     <footer class="pb-4 bg-primary-2 " id="footer">

@@ -1,4 +1,14 @@
 {
+  "di-liberto-campione-del-mondo-k1-200.json": {
+    "date": "2021-09-19T15:15:11.565Z",
+    "cover": "https://www.federcanoa.it/images/IMG_2660.JPG",
+    "dove": "Copenaghen",
+    "quando": "19 Giugno 2021",
+    "title": "Di Liberto Campione del Mondo K1 200",
+    "tags": "Campionato del Mondo",
+    "link": "https://www.federcanoa.it/home/news/23-news-velocita/6059-mondiali-italia-che-spettacolo-in-danimarca-due-medaglie-d%E2%80%99oro-nel-k1-200-e-c2-500-e-un-bronzo-nel-c1-500.html",
+    "body": "Erano vent’anni che l’Italia non saliva sul gradino più alto del podio in una competizione mondiale."
+  },
   "di-liberto-e-rizza-campioni-del-mondo.json": {
     "date": "2019-06-02T13:57:19.236Z",
     "dove": "Duisburg, Germania",
@@ -8,6 +18,16 @@
     "tags": "World Cup",
     "body": "Il palermitano Di liberto ORO nel K2 200 metri.\\nSul gradino più alto del podio in coppia con Rizza,",
     "link": "https://www.federcanoa.it/home/news/23-news-velocita/5213-coppa-del-mondo-rizza-e-di-liberto-da-sogno,-oro-nel-k2-200-metri.html"
+  },
+  "doppietta-a-mantova.json": {
+    "date": "2019-04-07T14:57:13.815Z",
+    "dove": "Mantova",
+    "quando": "7 Aprile 2019",
+    "cover": "https://www.federcanoa.it/images/joomgallery/originals/fotogallery_58/campionato_italiano_di_fondo_-_mantova_7_aprile_2019_74/_dsc0048_20190408_1249117995.jpeg",
+    "link": "http://www.federcanoa.it/home/news/23-news-velocita/5134-titoli-tricolori-di-fondo-assegnati-sul-lago-inferiore-di-mantova,-show-sulla-lunga-distanza.html",
+    "body": "Due i Titoli di Fondo conquistati: Cat. Ragazzi con Marco Alaimo e Cat. Under 23 con  Agnese Celestino ed Elisabetta Maffioli.",
+    "title": "Doppietta a Mantova",
+    "tags": "Canoa Fondo"
   },
   "oro-per-elisabbetta-maffioli.json": {
     "date": "2019-06-22T13:41:43.841Z",
