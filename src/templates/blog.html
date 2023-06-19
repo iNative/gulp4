@@ -59,10 +59,14 @@ logo = "white"
 	  			    
 	  			  </script>
 	              <div class="d-flex align-items-center mt-3">
-	                <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm">
+	                  {% if post.author == "Redazione" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
+					  {% if post.author == "" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
+					    
+	   			    {% if post.author == "Federcanoa" %} <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm"> {% endif %}
+	                
 	                <div class="ml-1">
 	                  <span class="text-small text-muted">di</span>
-	                  <span class="text-small">Federcanoa</span>
+	                  <span class="text-small">{{ post.author }}</span>
 	                </div>
 	              </div>
 	            </div>

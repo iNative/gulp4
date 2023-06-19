@@ -58,10 +58,13 @@ logo = "black"
             <h1>{{ post.title}}</h1>
             <div class="d-flex align-items-center">
               <a href="#">
-                <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2">
+               {% if post.author == "Redazione" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
+			   {% if post.author == "" %} <img src="assets/img/apple-touch-icon.png" alt="Avatar" class="avatar mr-2"> {% endif %}
+			    {% if post.author == "Federcanoa" %} <img src="https://www.federcanoa.it/templates/ifrit/icon@2x.png" alt="Image" class="avatar avatar-sm"> {% endif %}
+			    
               </a>
               <div>
-                <div>di <a href="#">Redazione</a>
+                <div>di <a href="#">{{ post.author}}</a>
                 </div>
                 
               </div>
