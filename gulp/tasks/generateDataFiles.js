@@ -12,6 +12,12 @@ gulp.task('generateDataFiles', function (done) {
 
   Object.keys(blogContent).forEach((postName) => {
     const postData = blogContent[postName];
+	
+	let regex = /\n/g;
+	let replacedText = blogContent[postName].body.replace(regex, "\\n");
+	blogContent[postName].body=replacedText;
+	
+	
     const dataFileName = postName.replace('.json', '') + '.html';
     const dataFilePath = path.join(dataDirectory, dataFileName);
     const templateData = `{% set list = [${JSON.stringify(postData)}] %}`;
