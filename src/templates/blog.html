@@ -28,14 +28,14 @@ logo = "white"
 			
 	        <div class="col-md-6 col-lg-4" data-isotope-item>
 	          <div class="card">
-	            <a href="/{{post.link}}"> <!-- generate post link--->
+	            <a href="{{post.link}}"> <!-- generate post link--->
 	              <img src="{{post.cover}}" alt="Image" class="card-img-top" />
 	            </a>
 	            <div class="card-body d-flex flex-column">
 	              <div class="d-flex justify-content-between mb-3">
 	                <div class="text-small d-flex">
 	                  <div class="mr-2">
-	                    <a href="/{{post.link}}">{{post.tags}}</a>
+	                    <a href="{{post.link}}">{{post.tags}}</a>
 	                  </div>
 	                  <span class="text-muted">{{ post.date | truncate(10,true,'') }}
 </span>
@@ -44,7 +44,7 @@ logo = "white"
 	                  <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg" alt="heart interface icon" data-inject-svg />12
 	                </span>
 	              </div>
-	              <a href="/{{post.link}}">
+	              <a href="{{post.link}}">
 	                <h4>{{post.title}}</h4>
 	              </a>
 	              <p id="postPre" class="flex-grow-1">
