@@ -44,15 +44,15 @@ collections:
     label: "Home Section"
     widget: "list"
     types:
-  - label: "Carousel"
-    name: "carousel"
-    widget: object
-    summary: "{{fields.header}}"
+      - label: "Carousel"
+        name: "carousel"
+        widget: object
+        summary: "{{fields.header}}"
     fields:
       - { label: Header, name: header, widget: string, default: "Image Gallery" }
       - { label: Template, name: template, widget: string, default: "carousel.html" }
-  - label: Images
-    name: images
-    widget: list
-    field: { label: Image, name: image, widget: image }
+      - label: Images
+        name: images
+        widget: list
+        field: { label: Image, name: image, widget: image }
 
