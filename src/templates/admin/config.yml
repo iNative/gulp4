@@ -40,4 +40,19 @@ collections:
       - { label: "Copertina", name: "cover", widget: "image", required: false}
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Corpo", name: "body", widget: "markdown"}
+-  label: 'Home Section'
+  name: 'sections'
+  widget: 'list'
+  types:
+    - label: 'Carousel'
+      name: 'carousel'
+      widget: object
+      summary: '{{fields.header}}'
+      fields:
+        - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+        - { label: Template, name: template, widget: string, default: 'carousel.html' }
+        - label: Images
+          name: images
+          widget: list
+          field: { label: Image, name: image, widget: image }
 
