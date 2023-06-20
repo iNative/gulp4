@@ -43,6 +43,7 @@ collections:
   - name: "sections"
     label: "Home Section"
     widget: "list"
+    folder: "content"
     types:
       - label: "Carousel"
         name: "carousel"
