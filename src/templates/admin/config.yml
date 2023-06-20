@@ -49,9 +49,9 @@ collections:
         name: "carousel"
         widget: object
         summary: "{{fields.header}}"
-    fields:
-      - { label: Header, name: header, widget: string, default: "Image Gallery" }
-      - { label: Template, name: template, widget: string, default: "carousel.html" }
+        fields:
+          - { label: Header, name: header, widget: string, default: "Image Gallery" }
+          - { label: Template, name: template, widget: string, default: "carousel.html" }
       - label: Images
         name: images
         widget: list
