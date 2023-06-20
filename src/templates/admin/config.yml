@@ -9,36 +9,25 @@ display_url: https://www.canottieritrinacria.palermo.it
 locale: "it"
 collections:
 
-  - name: "Impostazioni"
-    label: "Impostazioni"
-    files:
-      - label: "Generali"
-        name: "Generali"
-        file: "/src/templates/settings.json"
-        identifier_field: intestazione
-        fields:
-         - { label: "Logo", name: "logo", widget: "image"}
-         - { label: "Intestazione", name: "intestazione", widget: "string"}
-         - { label: "Contatti", name: "contatti", widget: "string"}
-         - { label: "Email", name: "email", widget: "string"}
-         - { label: "Copertina Home page", name: "home_cover", widget: "image"}
-         - { label: "Blog", name: "blog", widget: "boolean"}
-  - name: "Notizie"
-    label: "Notizie"
-    label_singular: "Notizia" # Used in the UI, ie: "New Post"
-    folder: "content/blog"
-    extension: "json"
-    create: true
-    fields:
-      - { label: "Data Pubblicazione", name: "date", widget: "datetime" }
-      - { label: "Autore", name: "author", widget: "string", default: "Redazione o Federcanoa", required: false }
-      - { label: "Link", name: "link", widget: "string",required: false}
-      - { label: "Dove", name: "dove", widget: "string", required: false}
-      - { label: "Quando", name: "quando", widget: "string", required: false}
-      - { label: "Titolo", name: "title", widget: "string"}
-      - { label: "Sotto Titolo", name: "subtitle", widget: "string", required: false}
-      - { label: "Copertina", name: "cover", widget: "image", required: false}
-      - { label: "Tags", name: "tags", widget: "string" }
-      - { label: "Corpo", name: "body", widget: "markdown"}
-
-
+- label: 'Home Section'
+  name: 'sections'
+  widget: 'list'
+  types:
+    - label: 'Carousel'
+      name: 'carousel'
+      widget: object
+      summary: '{{fields.header}}'
+      fields:
+        - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+        - { label: Template, name: template, widget: string, default: 'carousel.html' }
+        - label: Images
+          name: images
+          widget: list
+          field: { label: Image, name: image, widget: image }
+    - label: 'Spotlight'
+      name: 'spotlight'
+      widget: object
+      fields:
+        - { label: Header, name: header, widget: string, default: 'Spotlight' }
+        - { label: Template, name: template, widget: string, default: 'spotlight.html' }
+        - { label: Text, name: text, widget: text, default: 'Hello World' }
