@@ -41,3 +41,4 @@ collections:
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Corpo", name: "body", widget: "markdown"}
 
+
