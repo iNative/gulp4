@@ -33,15 +33,10 @@ gulp.task('loadBlogContent', function(cb) {
 
 gulp.task('transformData', function(cb) {
   let blogContent = JSON.parse(fs.readFileSync(config.src.decapDatafile, 'utf8'));
-        
-		
-	  const sortedPosts = Object.entries(blogContent)
-	    .sort(([keyA, postA], [keyB, postB]) => new Date(postB.date) - new Date(postA.date))
-	    .reduce((acc, [key, post]) => ({ ...acc, [key]: post }), {});
-		
-		
+  const sortedPosts = Object.entries(blogContent)
+  .sort(([keyA, postA], [keyB, postB]) => new Date(postB.date) - new Date(postA.date))
+  .reduce((acc, [key, post]) => ({ ...acc, [key]: post }), {});
   let transformedContent = `{% set list = [${Object.values(sortedPosts).map(JSON.stringify).join(',\n')}] %}`;
-
   fs.writeFileSync(config.src.njDatafile, transformedContent);
   console.log('Transformed data saved to' + config.src.njDatafile);
   cb();
